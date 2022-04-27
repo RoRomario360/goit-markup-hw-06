@@ -729,8 +729,6 @@ img {
 .footer-icon {
   fill: var(--hero-title-color);
 }
-.input-footer {
-}
 
 /* --------------------------FORM-footer------------------- */
 
@@ -892,7 +890,7 @@ img {
 .form-field input:focus {
   border-color: var(--hover-buton-color);
 }
-.form-field input:focus .label-title {
+.form-field input:focus .label-icon {
   fill: #188ce8;
 }
 .label-title {
@@ -933,27 +931,26 @@ img {
 
 /* checkbox */
 .custom-checkbox {
-  position: relative;
-  top: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   margin-right: 10px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  border: 1px solid var(--main-text-title-color);
+  border: 2px solid var(--main-text-title-color);
+  background-color: var(--hero-title-color);
 }
 .icon-check {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 16px;
-  height: 15px;
-  fill: transparent;
-  transition: fill 250ms ease-in cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.agreement-checkbox:checked + .custom-checkbox > .icon-check {
-  fill: var(--header-color);
+.agreement-checkbox:checked + .custom-checkbox {
   border-radius: 2px;
   background-color: var(--hover-buton-color);
+  border: 2px solid var(--hover-buton-color);
+  border: 0;
 }
 
 .policy-agreement {
@@ -996,11 +993,14 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.form-icon {
+.label-icon {
   position: absolute;
   top: 30px;
   left: 12px;
   fill: var(--main-text-title-color);
+}
+.form-input:focus + .label-icon {
+  fill: var(--hover-buton-color);
 }
 
 /* KEYFRAMES */
