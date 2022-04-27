@@ -998,6 +998,8 @@ img {
 }
 .button-submit {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 200px;
   height: 50px;
   padding: 0;
