@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <label class="check option" for="checkbox">
+      <span class="check-box">
+        <svg width="16px" height="15px">
+          <use href="./images/icons.svg#icon-check-empty"></use>
+        </svg>
+      </span>
+      <input class="check-input" type="checkbox" />Test-1
+    </label>
+    <label class="check option" for="checkbox">
+      <input class="check-input" type="checkbox" checked />Test-2
+    </label>
+    <label class="check option" for="checkbox">
+      <input class="check-input" type="checkbox" disabled />Test-3
+    </label>
+    <label class="check option" for="checkbox">
+      <input class="check-input" type="checkbox" checked disabled />Test-4
+    </label>
+  </body>
+</html>
