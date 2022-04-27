@@ -841,6 +841,7 @@ img {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close:hover {
   fill: var(--hover-buton-color);
@@ -882,6 +883,7 @@ img {
   border-radius: 4px;
   outline: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-icon {
@@ -889,6 +891,7 @@ img {
   top: 30px;
   left: 12px;
   fill: var(--main-text-title-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .label-icon {
@@ -931,6 +934,7 @@ img {
   outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ----------------------------checkbox-------------------------- */
 .custom-checkbox {
@@ -941,6 +945,7 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 15px;
+  cursor: pointer;
   border-radius: 2px;
   border: 2px solid var(--main-text-title-color);
   background-color: var(--hero-title-color);
@@ -990,6 +995,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
   border: 0;
   color: #ffffff;
   background-color: var(--hover-buton-color);
